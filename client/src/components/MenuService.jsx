@@ -6,8 +6,11 @@ const MenuService = () =>
     <GlobalStyle />
       <StyledTrelloPlus>Trello+</StyledTrelloPlus>
       <Star>&#9734;</Star>
-      <div>Personal</div>
-      <div>Private</div>
+      <Divider />
+      <StyledPersonal>Personal</StyledPersonal>
+      <Divider />
+      <StyledPersonal><span>&#128274;</span> Private</StyledPersonal>
+      <Divider />
       <div>user + any other users</div>
       <div>... Show Menu</div>
   </StyledMenuService>
@@ -51,11 +54,38 @@ const StyledTrelloPlus = styled.div`
 `;
 
 const Star = styled.div`
+  border-radius: 3px;
   font-size: 12px;
-  height: 26px;
+  height: 20px;
   padding: 6px;
-  width: 26px;
-`
+  width: 20px;
+  &:hover {
+    background-color: rgba(0,0,0,.35);
+  }
+`;
+
+const Divider = styled.div`
+  border-left: 1px solid hsla(0,0%,100%,.2);
+  height: 16px;
+  margin: 0px 6px;
+`;
+
+const StyledPersonal = styled.div`
+  border-radius: 3px;
+  font-size: 14px;
+  height: 32px;
+  padding: 0px 6px;
+  min-width: 54px;
+  &:hover {
+    background-color: rgba(0,0,0,.35);
+  }
+  > span {
+    font-size: 12px;
+    height: 20px;
+    padding: 6px 6px 6px 0px;
+    width: 20px;
+  }
+`;
 
 
 export default MenuService;
