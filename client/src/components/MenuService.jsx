@@ -1,6 +1,8 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
+let letter = String.fromCharCode(Math.floor(65 + Math.random() * 26));
+
 const MenuService = () =>
   <StyledMenuService>
     <GlobalStyle />
@@ -11,7 +13,7 @@ const MenuService = () =>
       <Divider />
       <StyledPersonal><span>&#128274;</span> Private</StyledPersonal>
       <Divider />
-      <div>user + any other users</div>
+      <div><StyledMember>{letter}</StyledMember> <StyledMember>+</StyledMember> </div>
       <div>... Show Menu</div>
   </StyledMenuService>
 
@@ -84,6 +86,27 @@ const StyledPersonal = styled.div`
     height: 20px;
     padding: 6px 6px 6px 0px;
     width: 20px;
+  }
+`;
+
+let colorCodeOne = Math.floor(Math.random() * 256);
+let colorCodeTwo = Math.floor(Math.random() * 256);
+let colorCodeThree = Math.floor(Math.random() * 256);
+
+const StyledMember = styled.div`
+  background-color: rgba(${colorCodeOne}, ${colorCodeTwo}, ${colorCodeThree}, 1);
+  border-radius: 50%;
+  color: black;
+  font-size: 12px;
+  font-weight: 700;
+  height: 28px;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 4px;
+  &:hover {
+    background-color: rgba(${colorCodeOne}, ${colorCodeTwo}, ${colorCodeThree}, .55);
   }
 `;
 
