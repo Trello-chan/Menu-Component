@@ -14,7 +14,7 @@ const MenuService = () =>
       <StyledPersonal><span>&#128274;</span> Private</StyledPersonal>
       <Divider />
       <div><StyledMember>{letter}</StyledMember> <StyledMember>+</StyledMember> </div>
-      <div>... Show Menu</div>
+      <StyledShowMenu>... <u>Show Menu</u></StyledShowMenu>
   </StyledMenuService>
 
 const GlobalStyle = createGlobalStyle`
@@ -107,6 +107,21 @@ const StyledMember = styled.div`
   margin: 0px 4px;
   &:hover {
     background-color: rgba(${colorCodeOne}, ${colorCodeTwo}, ${colorCodeThree}, .55);
+  }
+`;
+
+const StyledShowMenu = styled.div`   
+  border-radius: 3px; 
+  font-size: 14px;
+  height: 28px;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 0px 8px;
+  &:hover {
+    background-color: rgba(0,0,0,.35);
+  }
+  > u { 
+    margin-left: 10px;
   }
 `;
 
