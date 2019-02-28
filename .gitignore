@@ -3,3 +3,4 @@ config.js
 database/seedData/data/
 bundle.js
 yarn-error.log
+.aws.json
