@@ -1,5 +1,5 @@
 {
-  "name": "Search-Component",
+  "name": "Menu-Component",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Trello-chan/Search-Component.git"
+    "url": "git+https://github.com/Trello-chan/Menu-Component.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Trello-chan/Search-Component/issues"
+    "url": "https://github.com/Trello-chan/Menu-Component/issues"
   },
-  "homepage": "https://github.com/Trello-chan/Search-Component#readme",
+  "homepage": "https://github.com/Trello-chan/Menu-Component#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.2",
@@ -30,6 +30,9 @@
     "@babel/register": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.4",
+    "grunt": "^1.0.3",
+    "grunt-aws": "^0.7.1",
+    "grunt-contrib-connect": "^2.0.0",
     "nodemon": "^1.18.9",
     "pg": "^7.7.1",
     "webpack": "^4.28.0",
