@@ -1,5 +1,6 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+// import styled, { createGlobalStyle } from 'styled-components';
+const styled = window.styled;
 
 let letter = String.fromCharCode(Math.floor(65 + Math.random() * 26));
 
@@ -17,7 +18,7 @@ const MenuService = () =>
       <StyledShowMenu>... <u>Show Menu</u></StyledShowMenu>
   </StyledMenuService>
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = styled.createGlobalStyle`
   body {
     height: 100vh;
     margin: 0px;
