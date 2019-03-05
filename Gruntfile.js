@@ -11,11 +11,15 @@ module.exports = function(grunt) {
       options: {
         accessKeyId: "<%= aws.accessKeyId %>",
         secretAccessKey: "<%= aws.secretAccessKey %>",
-        bucket: "<%= aws.bucket %>"
+        bucket: "<%= aws.bucket %>",
+        region: "us-west-1",
+        uploadConcurrency: 5,
+        downloadConcurrency: 5,
+        progress: "progressBar"
       },
       build: {
-        cwd: "public",
-        src: "**"
+        cwd: "client/dist/",
+        src: "**/*bundle.js"
       }
     },
     connect: {
