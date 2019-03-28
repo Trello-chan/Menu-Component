@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       },
       build: {
         cwd: "client/dist/",
-        src: "**/*bundle.js"
+        src: "*.js.gz"
       }
     },
     connect: {
