@@ -6,7 +6,7 @@ module.exports = {
   mode: 'production',
   entry: ['@babel/polyfill/noConflict', path.join(__dirname, './client/src/index.js')],
   output: {
-    path: path.resolve(__dirname, './client/dist/test'),
+    path: path.resolve(__dirname, './client/dist'),
     filename: 'menu-bundle.js',
   },
   module: {
